@@ -1,0 +1,14 @@
+{
+  "name": "bulk_streaming_platform_movies_shows_csv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gox-ai/bulk_streaming_platform_movies_shows_csv.git",
+  "author": "nambirajan-goxai <nambi@gox.ai>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "fs": "^0.0.1-security",
+    "json-2-csv": "^3.7.6"
+  }
+}

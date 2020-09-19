@@ -47,6 +47,7 @@ const getNewarrivals = async(page,country)=>{
             let obj = {
                 IMDB_ID : result.imdbid,
                 Title : result.title,
+                Type : result.type,
                 Language : result.language.toString(),
                 ReleaseYear : result.released,
                 Country : Object.keys(result.streamingAvailability.country)[0], 

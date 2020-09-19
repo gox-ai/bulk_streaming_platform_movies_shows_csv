@@ -1,4 +1,4 @@
-# Get regular BULK movie OTT data into CSV 
+# Get regular BULK movie/show OTT data in CSV 
 Get movies and shows information for over 150+ OTT/ Streaming Platforms from rapidapi. Nicely format new arrivals into csv 
 
 1. Saves new movie/show arrivals into a csv file

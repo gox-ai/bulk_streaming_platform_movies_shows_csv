@@ -4,7 +4,8 @@ const convert = require('json-2-csv')
 const fs = require('fs');
 require('dotenv').config()
 const JFile = require('jfile')
-
+let stream = fs.createWriteStream('newarrivals.csv', { flags: 'a' })
+       
 
 const getNewarrivals = async (page, country) => {
     return new Promise((resolve, reject) => {
@@ -77,6 +78,7 @@ async function getAllNewArrivals() {
 
 
     }
+                 
     let result = []
     let country = ['IN', 'US']
     let count = 1;
@@ -93,8 +95,7 @@ async function getAllNewArrivals() {
             for (let i = 1; i < data.length; i++) {   //console.log(data[i])
                 // let d = data[i]+ '\n'
                 setTimeout(() => {
-                    let stream = fs.createWriteStream('newarrivals.csv', { flags: 'a' })
-                    let file = new JFile('newarrivals.csv')
+                  let file = new JFile('newarrivals.csv')
                     let found = file.grep(data[i].IMDB_ID)
 
                     let arr = [data[i]]
